@@ -1,0 +1,51 @@
+{
+  "project": "SmokeLab Dynamic Volumes",
+  "evidence_type": "historical measured results, not a new experiment",
+  "hardware": "RTX 3070 Ti Laptop",
+  "display": [
+    1280,
+    720
+  ],
+  "volume_render": [
+    640,
+    360
+  ],
+  "grid": [
+    64,
+    64,
+    64
+  ],
+  "warmup_frames_per_repeat": 60,
+  "runs": [
+    {
+      "repeat": 1,
+      "measured_frames": 300,
+      "frame_wall_p95_ms": 16.05299949645996,
+      "gpu_span_p95_ms": 5.8593280000000005,
+      "valid_gpu_samples": 300
+    },
+    {
+      "repeat": 2,
+      "measured_frames": 300,
+      "frame_wall_p95_ms": 15.95359992980957,
+      "gpu_span_p95_ms": 5.79072,
+      "valid_gpu_samples": 300
+    },
+    {
+      "repeat": 3,
+      "measured_frames": 300,
+      "frame_wall_p95_ms": 15.932499885559082,
+      "gpu_span_p95_ms": 5.792768,
+      "valid_gpu_samples": 300
+    }
+  ],
+  "wall_scope": "Draw, GPU query waiting and Present; excludes outer message pump, JSON append and final log write.",
+  "gpu_scope": "Parameters/fluid, light cache, optional indirect approximation, integration, full-resolution composite and UI.",
+  "video_scope": "Offline capture at a fixed 1/30 simulation step, every second frame saved, 15 fps playback; normal simulated time, not FPS proof.",
+  "view_refinement_relative_l1": 0.0002295085739923933,
+  "shadow_refinement_relative_l1": 0.00011320550187582651,
+  "reference_scope": "One fixed state, shared cache; no cache spatial-convergence or physical multiple-scattering certification.",
+  "unity_initial_density_max_abs": 0,
+  "unity_initial_density_float_count": 1048576,
+  "unity_scope": "Initial-state parity and completed Player run only; no Unity GPU performance or evolved radiance parity certification."
+}
